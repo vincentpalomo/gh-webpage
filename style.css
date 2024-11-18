@@ -13,12 +13,12 @@ html, body {
 }
 
 .navbar {
-  height: 5%;
+  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .logo {
@@ -74,7 +74,7 @@ html, body {
 }
 
 footer {
-  height: 15%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,4 +82,24 @@ footer {
 
 .footer-content {
   font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-1, .content-3 {
+    height: 20%;
+  }
+
+  .content-2 {
+    height: 60%;
+  }
+
+  .content-1, .content-2, .content-3 {
+    width: 80%;
+  }
 }
